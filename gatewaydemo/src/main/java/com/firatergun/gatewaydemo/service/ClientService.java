@@ -20,5 +20,9 @@ public class ClientService {
 		Transaction transaction = repository.findById(transactionId).orElseThrow(() -> new ClientNotFoundException(transactionId));
 		return transaction.getCustomerInfo();
 	}
+	
+	public String getMe() {
+		return null;
+	}
 
 }
